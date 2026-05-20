@@ -20,5 +20,5 @@ test('Checkout flow in SwagLabs', async ({ page }) => {
 
   await expect(page.locator('.inventory_item_name')).toContainText('Sauce Labs Backpack');
   await page.click('#finish');
-  await expect(page.locator('.complete-header')).toHaveText('THANK YOU FOR YOUR ORDER');
+  await expect(page.locator('.complete-header')).toHaveText('Thank you for your order!');
 });
